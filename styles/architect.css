@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.head-section{
+    width: 1920px;
+    height: 1322px;
+    background: rgba(255, 144, 14, 0.10);
+}
+.head-section-div{
+    display: flex;
+    justify-content: space-around;
+}
