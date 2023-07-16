@@ -9,6 +9,27 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+
+.primary-btn{
+   width: 180px;
+   height: 4rem;
+   border-radius: 8px;
+   background: #FF900E;
+   border: 0;
+   margin: 30px 0 50px 0;
+   color: #FFF;
+   font-size: 1.4rem;
+   font-weight: 600;
+   /* padding: 20px 25px; */
+}
+
+.text-light-gray{
+   /* font-size: 1rem; */
+   font-weight: 400;
+   margin-top: 30px;
+}
+
+
  header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -55,27 +76,55 @@
     color: #131313;
     margin-top: 100px;
  }
- .banner-des{
-    /* font-size: 1rem; */
-    font-weight: 400;
-    margin-top: 30px;
- }
- .primary-btn{
-    width: 180px;
-    height: 4rem;
-    border-radius: 8px;
-    background: #FF900E;
-    border: 0;
-    margin: 30px 0 50px 0;
-    color: #FFF;
-    font-size: 1.4rem;
-    font-weight: 600;
-    /* padding: 20px 25px; */
- }
+ 
+ 
 
  .banner img{
     width: 100%;
  }
+
+
+
+ /* main styles  */ 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+ 
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.teams-contant{
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.quick-list{
+   color: var(--dark-03, #727272);
+   font-size: 45px;
+   font-weight: 500;
+}
+.of-our{
+   color: var(--dark-01, #131313);
+   font-size: 45px;
+   font-weight: 700;
+}
+.fratures{
+   color: #FF900E;
+   font-size: 45px;
+   font-weight: 700;
+}
+
+
+
 
 
 
@@ -87,12 +136,21 @@
         padding: 20px;
         
     }
-    nav{
+    nav, 
+    .teams-container{
         flex-direction: column;
     }
     nav > ul{
         margin-top: 20px;
     }
+    .teams-img-container{
+      grid-template-columns: 1fr;
+    }
+    .teams-contant{
+      padding-left: 30px;
+      padding-right: 20px;
+    }
+
  }
 
  /* tablet or medium devices  */
@@ -100,8 +158,10 @@
     header{
         padding: 50px;
     }
-    nav{
+    nav,
+    .teams-container{
         flex-direction: column;
+   
     }
     nav > ul{
         margin-top: 20px;
